@@ -1,7 +1,5 @@
 package com.devsuperior.dsvendas.service;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +21,7 @@ public class SaleService {
 	@Autowired
 	private SaleRepository repository;
 	
+	@Autowired
 	private SellerRepository sellerRepository;
 	
 	@Transactional(readOnly = true)
